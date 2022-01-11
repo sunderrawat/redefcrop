@@ -1,0 +1,21 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.3s;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 40%;
+  padding: 2rem;
+}
+
+.alert {
+  top: 95%;
+}
+
+.login {
+  background-color: #4d7d87;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0.7rem 2.9rem 0px;
+}

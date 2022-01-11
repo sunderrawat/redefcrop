@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.upper {
+  margin-bottom: 2rem;
+}
+.upper__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-around;
+}
+.select__signup, .select__login {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.select__login{
+  border-left: 2px solid #000;
+  padding-left: 7rem;
+}
+.bottom {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .upper__heading {
+    display: none;
+  }
+  .select__login{
+  border-left: 1px solid #000;
+  padding-left: 2rem;
+}
+}

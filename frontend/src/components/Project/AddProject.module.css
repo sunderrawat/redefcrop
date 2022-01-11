@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 10rem;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.heading{
+    font-size: 2.5rem;
+}

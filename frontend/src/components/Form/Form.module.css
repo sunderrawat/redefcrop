@@ -1,0 +1,107 @@
+.form {
+  display: flex;
+  font-size: 1.6rem;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.form input {
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  font-size: 1.4rem;
+  font-family: inherit;
+  border: none;
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: 0 1rem 2rem rgba(var(--primary-color), 0.1);
+}
+.form input:focus:invalid {
+  border-bottom: 2px solid red;
+}
+
+.radio__container {
+  display: flex;
+  gap: 5rem;
+}
+.radio__group {
+  display: flex;
+}
+
+.radio__group input {
+  margin-right: 2rem;
+}
+
+.radio__group label {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.radio__group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.checkmark__checkbox {
+  border-radius: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.radio__group label:hover input ~ .checkmark {
+  background-color: yellow;
+}
+
+.radio__group input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.radio__group input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio__group .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+}

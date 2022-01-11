@@ -1,0 +1,13 @@
+.container {
+  background-color: rgba(14, 180, 42, 0.925);
+  padding: 1rem;
+  color: #fff;
+  border-radius: 0.2rem;
+  z-index: 500;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.text {
+  font-size: 1.6rem;
+}
